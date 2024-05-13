@@ -4,4 +4,7 @@ describe("Soma teste", () => {
   test("Soma precisa teste", () => {
     expect(calculator.soma(100, 50)).toBe(5000);
   });
+  test("Soma precisa teste", () => {
+    expect(calculator.soma(100, 50)).toBe(5000);
+  });
 });
