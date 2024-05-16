@@ -1,5 +1,6 @@
 const express = require("express");
 const app = express();
+const port = 3000;
 const calculator = require("./src/Calculator/index");
 
 app.get("/", function (req, res) {
@@ -11,6 +12,6 @@ app.get("/", function (req, res) {
   );
 });
 
-app.listen(3001, function () {
-  console.log("Servidor esta rodando 3001");
+app.listen(port, () => {
+  console.log(`Servidor rodando no endereço http://localhost:${port}`);
 });
